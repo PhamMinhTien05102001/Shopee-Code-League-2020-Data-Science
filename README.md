@@ -26,4 +26,3 @@
 ##### * Model cho kết quả tốt trên tập dữ liệu ban đầu (dự đoán đúng 90343 ảnh đạt tỉ lệ 86%), nhưng kết quả có thể sẽ không còn tốt trên một tập dữ liệu mới
 # So sánh 2 phương án:
 
-
