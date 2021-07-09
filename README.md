@@ -11,10 +11,13 @@
 * Ta chia tập dữ liệu ban đầu ra thành 2 phần, mỗi phần train trên 1 model (đều là Transfer learning với VGG16)
 * Model 1: ta train với 21 label ban đầu (từ "00" -> "20"), Model 2: ta train với 21 label ở nửa sau (từ "21" -> "41")
 * Khi dự đoán 1 tấm ảnh thì tấm ảnh sẽ được cho qua 2 Model, là lấy kết quả của Model cho kết quả tốt hơn (như ví dụ ở hình dưới)
-
+![pa2](https://user-images.githubusercontent.com/81013330/125046566-56d7db00-e0c8-11eb-8146-b68b04f3b9c3.png)
 * Kết quả accuracy, loss trên tập train và tập validation của Model 1:
-
+![vgg16_21label(0-20) 75](https://user-images.githubusercontent.com/81013330/125046530-4d4e7300-e0c8-11eb-8148-816e471b2460.png)
 * Kết quả accuracy, loss trên tập train và tập validation của Model 2:
+![vgg16_21label(21-41)_75](https://user-images.githubusercontent.com/81013330/125046534-4de70980-e0c8-11eb-9f7f-85478913b379.png)
 * Dưới đây lần lượt là 2 hình
-![socre_vgg_2model](https://user-images.githubusercontent.com/81013330/125021001-0484c300-e0a4-11eb-924d-0e497cf97327.png)
+![socre_vgg_2model](https://user-images.githubusercontent.com/81013330/125046525-4cb5dc80-e0c8-11eb-8473-3aac99a8986b.png)
+
+
 
