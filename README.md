@@ -28,8 +28,8 @@
 # So sánh 2 phương án:
 |                   | Val_Accuracy Max | Val_Loss Min | Số ảnh dự đoán đúng |
 | ----------------- | ---------------- | ------------ | ------------------- |
-| Hướng tiếp cận 1  |        65%       |       1      |       97769 (92%)   |
-| Hướng tiếp cận 2  |        75%       |      1.6     |       90343 (86%)   |
+| Hướng tiếp cận 1  |        65%       |     1.6      |       97769 (92%)   |
+| Hướng tiếp cận 2  |        75%       |      1       |       90343 (86%)   |
 
 * Ta thấy rằng hướng tiếp cận thứ 2 đã cho kết quả val_acc cao hơn so với hướng tiếp cận thứ nhất (khoảng 10%), và val_loss cũng nhỏ hơn so với hướng tiếp cận thứ nhất (khoảng 0.6)
 *	Hướng tiếp cận 2 có val_acc cao hơn điều này giúp cho việc dự đoán trên một tập dữ liệu mới sẽ không còn nhiều sai sót
