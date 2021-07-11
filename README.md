@@ -3,7 +3,8 @@
 * Số lượng ảnh trong các label được thể hiện qua biểu đồ dưới đây
 ![num_in_label](https://user-images.githubusercontent.com/81013330/125062382-868edf00-e0d8-11eb-81af-f72dbc0d1126.png)
 # Method 1
-* Ta dùng Transfer learning ResNet50 cho toàn bộ 42 babel
+* Ta dùng Transfer learning ResNet50 cho toàn bộ 42 babel (Model tạo được có cấu trúc như hình bên dưới)
+![full resnet](https://user-images.githubusercontent.com/81013330/125191738-2af65a00-e26e-11eb-8e99-9517471dc503.png)
 * Kết quả accuracy, loss trên tập train và tập validation:
 ![resnet50_41label_65](https://user-images.githubusercontent.com/81013330/125044452-2b53f100-e0c6-11eb-94ed-f5b5a8d44f88.png)
 * Kết quả dự đoán trên toàn bộ tập dữ liệu ban đầu(tính theo %):
@@ -16,6 +17,8 @@
 * Model 1: ta train với 21 label ban đầu (từ "00" -> "20"), Model 2: ta train với 21 label ở nửa sau (từ "21" -> "41")
 * Khi dự đoán 1 tấm ảnh thì tấm ảnh sẽ được cho qua 2 Model, và lấy kết quả của Model cho kết quả tốt hơn (như ví dụ ở hình dưới)
 ![pa2](https://user-images.githubusercontent.com/81013330/125046566-56d7db00-e0c8-11eb-8146-b68b04f3b9c3.png)
+* Model tự tạo có cấu trúc như hình bên dưới:
+![vggmodel full](https://user-images.githubusercontent.com/81013330/125191744-347fc200-e26e-11eb-940f-38ee983646a2.png)
 * Kết quả accuracy, loss trên tập train và tập validation của Model 1:
 ![vgg16_21label(0-20) 75](https://user-images.githubusercontent.com/81013330/125046530-4d4e7300-e0c8-11eb-8148-816e471b2460.png)
 * Kết quả accuracy, loss trên tập train và tập validation của Model 2:
